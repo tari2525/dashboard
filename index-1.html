@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Blog Dashboard</h2>
+            </div>
+            <ul class="menu">
+                <li><i class="icon">&#x1F4C4;</i> Post</li>
+                <li><i class="icon">&#x1F4DD;</i> Pages</li>
+                <li><i class="icon">&#x1F4AC;</i> Comments</li>
+                <li><i class="icon">&#x1F4CA;</i> Stats</li>
+                <li><i class="icon">&#x1F4B8;</i> Earnings</li>
+                <li><i class="icon">&#x1F4CB;</i> Layout</li>
+                <li><i class="icon">&#x1F5A5;</i> Template</li>
+                <li><i class="icon">&#9881;</i> Settings</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1>Welcome to the Blog Dashboard</h1>
+            <p>Manage your blog effectively using the menu on the left.</p>
+
+            <!-- Tambahan total views dan total comments -->
+            <div class="stats-container">
+                <div class="stat-box">
+                    <h3>Total Views</h3>
+                    <p id="totalViews">0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Total Comments</h3>
+                    <p id="totalComments">0</p>
+                </div>
+            </div>
+
+            <!-- Tambahan untuk grafik diagram batang dan garis -->
+            <div class="chart-container">
+                <h3>Monthly Earnings</h3>
+                <canvas id="barChart"></canvas>
+            </div>
+
+            <div class="chart-container">
+                <h3>Monthly Visits</h3>
+                <canvas id="lineChart"></canvas>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
